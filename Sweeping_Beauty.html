@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sweeping Beauty Cleaning Services</title>
+    <meta name="description" content=""/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            z-index: -9999;
+        }
+        
+        body {
+            background-color: black;
+        }
+
+        .video-background {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        .logo {
+            max-height: max(25vh, 100px);
+        }
+        
+        .social-icon {
+            font-size: 4rem;
+            color: #ffffff; /* Facebook blue */
+        }
+
+        .social-icon:hover {
+            color: #d0d0d0; /* Darker Facebook blue on hover */
+        }
+
+        main {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        button {
+            font-size: 1.25rem;
+        }
+        
+        #under-construction-container {
+            padding: 2rem;
+            border-radius: 1.5rem;
+            background-color: rgba(0, 141, 201, 0.85);
+            margin: 0.5rem;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .mobile-hidden {
+                display: none;
+            }
+        }
+        
+        @media screen and (min-width: 769px) {
+            .video-background {
+                width: min(768px, 75vw);
+                left: 50%;
+                transform: translate(-50%, 0);
+                mask: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <video class="video-background" autoplay muted loop aria-label="Background video of under construction site">
+        <source src="assets/sweeping-beauty-art.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <main role="main">
+        <section id="under-construction-container" aria-labelledby="under-construction-title">
+            <img class="logo" src="assets/SBCS-logo-2x-transparent.png" alt="Sweeping Beauty Cleaning Services">
+            <h1 id="under-construction-title">Website Under Construction</h1>
+            <p class="mobile-hidden">We are working hard to bring you something amazing!<br>Stay tuned.</p>
+            <a href="https://www.facebook.com/SweepingBeautyCleaningService" target="_blank" aria-label="Visit our Facebook page">
+                <i class="fab fa-facebook social-icon"></i>
+            </a>
+        </section>
+    </main>
+    <script defer> 
+        var video = document.getElementById("background"); 
+        video.autoplay = true;
+        video.play();
+    </script>
+</body>
+</html>
