@@ -1,21 +1,23 @@
+:root {
+    --light: #FAFAFF;
+    --dark: #322E49;
+    --accent-primary: #00B0BD;
+    --accent-secondary: #183238;
+    --text-primary: #322E49;
+    --text-secondary: #ffffff; 
+}
+
 body, html {
-    height: 100%;
     margin: 0;
-    overflow: hidden;
     z-index: -9999;
 }
 
 body {
-    background-color: black;
+    background-color: var(--dark);
 }
 
-.video-background {
-    position: fixed;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+nav {
+    background-color: var(--light);
 }
 
 .logo {
@@ -24,20 +26,15 @@ body {
 
 .social-icon {
     font-size: 4rem;
-    color: #ffffff; /* Facebook blue */
+    color: var(--text-secondary);
 }
 
 .social-icon:hover {
-    color: #d0d0d0; /* Darker Facebook blue on hover */
+    color: var(--accent-primary);
 }
 
 main {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
+    color: var(--text-secondary)
 }
 
 h1 {
@@ -53,26 +50,4 @@ p {
 
 button {
     font-size: 1.25rem;
-}
-
-#under-construction-container {
-    padding: 2rem;
-    border-radius: 1.5rem;
-    background-color: rgba(0, 141, 201, 0.85);
-    margin: 0.5rem;
-}
-
-@media screen and (max-width: 600px) {
-    .mobile-hidden {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .video-background {
-        width: min(768px, 75vw);
-        left: 50%;
-        transform: translate(-50%, 0);
-        mask: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
-    }
 }
