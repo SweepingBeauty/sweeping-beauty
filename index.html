@@ -11,14 +11,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <!-- Custom website assets -->
     <link rel="stylesheet" href="style.css">
     <script defer src="main.js"></script>
 </head>
 <body>
     <!-- 
-    - Some photos of services
-    - list services (residential, commercial, Construction, one time, deep clean, vacation rentals)
+    X Some photos of services
+    X list services (residential, commercial, Construction, one time, deep clean, vacation rentals)
         - no prices
     - embed the Facebook feed like I did with fvht
         - link to Facebook
@@ -26,17 +29,17 @@
     - about me blurb with contact info
     - email, phone, etc
     -->
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-sm">
+    <header class="sticky-top text-cursive">
+        <nav class="light navbar navbar-expand-sm border-bottom border-2">
             <div class="container justify-content-between">
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/SBCS-logo-2x-transparent.png" alt="Sweeping Beauty Cleaning Services" height="96">
+                    <img src="./assets/SBCS-logo-2x-transparent.png" alt="Sweeping Beauty Cleaning Services" height="72">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav text-end">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#gallery">Gallery</a>
                         </li>
@@ -56,7 +59,8 @@
     </header>
     
     <main role="main">
-        <section id="gallery" class="carousel slide">
+        <section id="gallery" class="dark carousel slide pt-3 mb-3">
+            <h2 class="mb-4 text-center text-cursive">Gallery</h2>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <video 
@@ -178,8 +182,110 @@
         </section>
         
         
-        <section id="services">
-            
+        <section id="services" class="container light">
+            <h1 class="mb-3 text-center text-cursive">Our Services</h1>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title text-cursive">Residential Cleaning</h2>
+                            <h3 class="card-subtitle h4 mb-2 text-body-secondary">Stress-Free Home Maintenance</h3>
+                            <p class="card-text">Keeping your home clean is no small task, especially with a busy lifestyle. Our <strong>residential cleaning services</strong> are designed to take the stress off your hands, ensuring your living space is always neat and tidy.</p>
+                            <a href="#contact" class="btn btn-primary">Book now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title text-cursive">Commercial Cleaning</h2>
+                            <h3 class="card-subtitle h4 mb-2 text-body-secondary">For Office, Retail & Professional Spaces</h3>
+                            <p class="card-text">A clean workplace fosters productivity and leaves a lasting impression on clients. Our <strong>commercial cleaning services</strong> cover offices, retail spaces, and other business environments. Our skilled team handles it all for a clean and tidy professional environment.</p>
+                            <a href="#contact" class="btn btn-primary">Book now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title text-cursive">Post-construction Cleanup</h2>
+                            <h3 class="card-subtitle h4 mb-2 text-body-secondary">Dust/debris Removal & Final Polish</h3>
+                            <p class="card-text">Renovations or new builds can leave behind a significant amount of dust and debris. Our <strong>post-construction cleanup</strong> services ensure that your property is move-in ready with no trace of construction mess.</p>
+                            <a href="#contact" class="btn btn-primary">Book now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title text-cursive">Deep Cleaning</h2>
+                            <h3 class="card-subtitle h4 mb-2 text-body-secondary">High-Intensity & Detail-Focused</h3>
+                            <p class="card-text">For those hard-to-reach areas and stubborn dirt, a regular clean just isn’t enough. Our <strong>deep cleaning service</strong> provides a more thorough approach, ensuring a truly spotless result.</p>
+                            <a href="#contact" class="btn btn-primary">Book now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title text-cursive">Move-in & Move-out Cleaning</h2>
+                            <h3 class="card-subtitle h4 mb-2 text-body-secondary">Total Prep for Your Next Chapter</h3>
+                            <p class="card-text">Moving can be overwhelming, but our <strong>move-in cleaning and move-out cleaning services</strong> ensure that your old home is spotless when you leave, and your new one is fresh and ready when you arrive.</p>
+                            <a href="#contact" class="btn btn-primary">Book now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title text-cursive">Vacation Rental Cleaning</h2>
+                            <h3 class="card-subtitle h4 mb-2 text-body-secondary">Turnover Cleaning & Guest-Ready Prep</h3>
+                            <p class="card-text">For short-term rental owners, maintaining cleanliness between guests is crucial. Our <strong>rental cleaning service</strong> ensures that your property is always guest-ready, helping you earn great reviews.</p>
+                            <a href="#contact" class="btn btn-primary">Book now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title text-cursive">Janitorial Services</h2>
+                            <h3 class="card-subtitle h4 mb-2 text-body-secondary">Daily Maintenance & Routine Care</h3>
+                            <p class="card-text">For businesses that require daily or periodic cleaning, our <strong>janitorial services</strong> are the perfect solution. We provide routine maintenance, keeping your facilities clean and hygienic day after day.</p>
+                            <a href="#contact" class="btn btn-primary">Book now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title text-cursive">School Cleaning</h2>
+                            <h3 class="card-subtitle h4 mb-2 text-body-secondary">Safe, Healthy & Student-Ready</h3>
+                            <p class="card-text">Educational institutions require consistent and thorough cleaning to maintain a safe environment for students and staff. Our <strong>school cleaning services</strong> focus on creating a clean and welcoming learning space.</p>
+                            <a href="#contact" class="btn btn-primary">Book now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title text-cursive">Medical Facility Cleaning</h2>
+                            <h3 class="card-subtitle h4 mb-2 text-body-secondary">Sanitized, Compliant & Clinical Grade</h3>
+                            <p class="card-text">Hygiene and cleanliness are critical in medical environments. We offers specialized <strong>medical facility cleaning services</strong> to meet the strict standards of health and safety regulations.</p>
+                            <a href="#contact" class="btn btn-primary">Book now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title text-cursive">Custom Cleaning</h2>
+                            <h3 class="card-subtitle h4 mb-2 text-body-secondary">One-time, Bi/Weekly cleaning</h3>
+                            <p class="card-text">Whether you need frequent maintenance or a clean every other week, we offer convenient <strong>weekly cleaning and bi-weekly cleaning services</strong> to keep your space consistently fresh.</p>
+                            <a href="#contact" class="btn btn-primary">Book now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
         <section id="contact">

@@ -7,17 +7,24 @@
     --text-secondary: #ffffff; 
 }
 
-body, html {
-    margin: 0;
-    z-index: -9999;
-}
-
-body {
-    background-color: var(--dark);
-}
-
-nav {
+.light {
     background-color: var(--light);
+    color: var(--text-primary);
+}
+
+.dark {
+    background-color: var(--dark);
+    color: var(--text-secondary);
+}
+
+.accent-primary {
+    background-color: var(--accent-primary);
+    color: var(--text-primary);
+}
+
+.accent-secondary {
+    background-color: var(--accent-secondary);
+    color: var(--text-secondary);
 }
 
 .logo {
@@ -33,6 +40,18 @@ nav {
     color: var(--accent-primary);
 }
 
+.text-cursive {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.carousel-video {
+    display: block;
+    margin: 0 auto;
+    max-width: 360px;
+}
+
 /* Semi-hacky way to only have filter on the background */
 #gallery .carousel-inner::before {
     content: "";
@@ -44,29 +63,4 @@ nav {
     background-repeat: no-repeat;
     background-size: contain;
     filter: opacity(60%) blur(2px);
-}
-
-.carousel-video {
-    display: block;
-    margin: 0 auto;
-    max-width: 360px;
-}
-
-main {
-    color: var(--text-secondary)
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
-
-p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-}
-
-button {
-    font-size: 1.25rem;
 }
