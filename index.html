@@ -7,12 +7,13 @@
     <title>Sweeping Beauty Cleaning Services</title>
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     <meta name="description" content="Offering professional residential and commercial cleaning solutions, we're proud of our work and ensure every corner is spotless. Contact us today!"/>
-    <!-- Bootstrap imports -->
+    <!-- External imports -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <!-- Font awesome for social media icons and other icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom website assets -->
     <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
 </head>
 <body>
     <!-- 
@@ -55,8 +56,125 @@
     </header>
     
     <main role="main">
-        <section id="gallery">
-            
+        <section id="gallery" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video 
+                        controls 
+                        playsinline
+                        loop
+                        preload="none" 
+                        poster="./assets/videos/photography-touch-ups-poster.webp"
+                        class="rounded shadow">
+                        <source src="./assets/videos/photography-touch-ups.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video 
+                        controls 
+                        playsinline
+                        loop
+                        preload="none" 
+                        poster="./assets/videos/shower-tlc-poster.webp"
+                        class="rounded shadow">
+                        <source src="./assets/videos/shower-tlc.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video 
+                        controls 
+                        playsinline
+                        loop
+                        preload="none" 
+                        poster="./assets/videos/beach-house-poster.webp"
+                        class="rounded shadow">
+                        <source src="./assets/videos/beach-house.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video 
+                        controls 
+                        playsinline
+                        loop
+                        preload="none" 
+                        poster="./assets/videos/construction-clean-poster.webp"
+                        class="rounded shadow">
+                        <source src="./assets/videos/construction-clean.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video 
+                        controls 
+                        playsinline
+                        loop
+                        preload="none" 
+                        poster="./assets/videos/office-clean-poster.webp"
+                        class="rounded shadow">
+                        <source src="./assets/videos/office-clean.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video 
+                        controls 
+                        playsinline
+                        loop
+                        preload="none" 
+                        poster="./assets/videos/stove-before-after-poster.webp"
+                        class="rounded shadow">
+                        <source src="./assets/videos/stove-before-after.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video 
+                        controls 
+                        playsinline
+                        loop
+                        preload="none" 
+                        poster="./assets/videos/summerland-1906-poster.webp"
+                        class="rounded shadow">
+                        <source src="./assets/videos/summerland-1906.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video 
+                        controls 
+                        playsinline
+                        loop
+                        preload="none" 
+                        poster="./assets/videos/summerland-1906-2-poster.webp"
+                        class="rounded shadow">
+                        <source src="./assets/videos/summerland-1906-2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video 
+                        controls 
+                        playsinline
+                        loop
+                        preload="none" 
+                        poster="./assets/videos/vacation-rental-poster.webp"
+                        class="rounded shadow">
+                        <source src="./assets/videos/vacation-rental.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#gallery" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gallery" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </section>
         
         
