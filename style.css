@@ -11,16 +11,8 @@
     background-color: var(--light);
 }
 
-.text-light {
-    color: var(--text-primary);
-}
-
 .dark {
     background-color: var(--dark);
-}
-
-.text-dark {
-    color: var(--text-secondary);
 }
 
 .accent-primary {
@@ -39,7 +31,8 @@
 
 .social-icon {
     font-size: 4rem;
-    color: var(--text-secondary);
+    color: var(--accent-secondary);
+    transition: color 0.25s;
 }
 
 .social-icon:hover {
@@ -50,6 +43,16 @@
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal;
+}
+
+.contact-link {
+    font-size: 1.5rem;
+    color: var(--accent-secondary);
+    transition: color 0.25s;
+}
+
+.contact-link:hover {
+    color: var(--accent-primary);
 }
 
 .carousel-video {
@@ -72,9 +75,24 @@
 }
 
 .card {
-    transition: scale 0.25s;
+    transition: scale 0.25s ease-in-out;
 }
 
 .card:hover {
     scale: 105%;
+}
+
+.card .btn-primary {
+    --bs-btn-color: var(--text-primary);
+    --bs-btn-bg: var(--light);
+    --bs-btn-border-color: var(--accent-secondary);
+    --bs-btn-hover-color: var(--text-secondary);
+    --bs-btn-hover-bg: var(--accent-primary);
+    --bs-btn-hover-border-color: var(--accent-secondary);
+}
+
+.card .btn-primary:hover {
+    --bs-btn-color: var(--text-secondary);
+    --bs-btn-bg: var(--accent-primary);
+    --bs-btn-border-color: var(--accent-secondary);
 }
