@@ -64,3 +64,11 @@
     background-size: contain;
     filter: opacity(60%) blur(2px);
 }
+
+.card {
+    transition: scale 0.25s;
+}
+
+.card:hover {
+    scale: 105%;
+}
