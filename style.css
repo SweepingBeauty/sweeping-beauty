@@ -31,7 +31,7 @@
 
 .social-icon {
     font-size: 4rem;
-    color: var(--accent-secondary);
+    color: var(--text-secondary);
     transition: color 0.25s;
 }
 
@@ -47,7 +47,7 @@
 
 .contact-link {
     font-size: 1.5rem;
-    color: var(--accent-secondary);
+    color: var(--text-secondary);
     transition: color 0.25s;
 }
 
