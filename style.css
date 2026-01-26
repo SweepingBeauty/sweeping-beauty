@@ -9,11 +9,17 @@
 
 .light {
     background-color: var(--light);
+}
+
+.text-light {
     color: var(--text-primary);
 }
 
 .dark {
     background-color: var(--dark);
+}
+
+.text-dark {
     color: var(--text-secondary);
 }
 
