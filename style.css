@@ -29,6 +29,14 @@
     max-height: max(25vh, 100px);
 }
 
+.section-title {
+    font-size: calc(2.5rem + 1.5vw);
+}
+
+.section-title-2 {
+    font-size: calc(1.75rem + 1.5vw);
+}
+
 .social-icon {
     font-size: 4rem;
     color: var(--text-secondary);
