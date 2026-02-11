@@ -83,6 +83,14 @@
     filter: opacity(45%);
 }
 
+#services div[id] {
+    scroll-margin-top: 15rem;
+}
+
+section[id] {
+    scroll-margin-top: 7rem; 
+}
+
 .card {
     transition: scale 0.25s ease-in-out;
 }
